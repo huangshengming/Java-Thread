@@ -1,5 +1,10 @@
-package com.simple.one;
+package com.simple.one.value;
 
+/**
+ * 消费者
+ * @author xingwuzhao
+ *
+ */
 public class C {
 
 	private String lock;

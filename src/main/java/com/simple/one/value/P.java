@@ -1,4 +1,4 @@
-package com.simple.one;
+package com.simple.one.value;
 
 /**
  * 生产者
