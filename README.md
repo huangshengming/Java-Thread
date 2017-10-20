@@ -1,2 +1,3 @@
 # Java-Thread
-java多线程Demo
+单一消费者 和 单一生产者
+	com.simple.one
