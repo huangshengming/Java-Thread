@@ -17,6 +17,6 @@
 	com.lock.simple.many
 ## 读读共享（使用 ReentrantReadWriteLock）<br />		
 	com.lock.readAndWrite.readAndread
-## 读写互斥（使用 ReentrantReadWriteLock）（只要包含写操作 都是互斥 读写互斥／写读互斥／）<br />		
+## 读写互斥（使用 ReentrantReadWriteLock）（只要包含写操作 都是互斥 读写互斥／写读互斥／写写互斥）<br />		
 	com.lock.readAndWrite.readAndwrite
 
