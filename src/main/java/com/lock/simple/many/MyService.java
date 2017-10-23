@@ -1,4 +1,4 @@
-package com.lock.many;
+package com.lock.simple.many;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class MyService {
 	
-	private Lock lock = new ReentrantLock();
+	private Lock lock = new ReentrantLock(true);
 	private Condition condition = lock.newCondition();
 	
 	private boolean hasValue = true;

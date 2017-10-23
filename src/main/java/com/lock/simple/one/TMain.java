@@ -1,4 +1,4 @@
-package com.lock.one;
+package com.lock.simple.one;
 
 public class TMain {
 	

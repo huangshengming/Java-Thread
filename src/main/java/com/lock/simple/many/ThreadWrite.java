@@ -1,17 +1,17 @@
-package com.lock.one;
+package com.lock.simple.many;
 
-public class ThreadRead extends Thread {
+public class ThreadWrite extends Thread {
 	
 	private MyService service;
 	
-	public ThreadRead(MyService service) {
+	public ThreadWrite(MyService service) {
 		this.service = service;
 	}
 
 	@Override
 	public void run() {
 		for (int i = 0; i < 5; i++) {
-			service.get();
+			service.set();
 		}
 	}
 }

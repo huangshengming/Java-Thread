@@ -1,4 +1,4 @@
-package com.lock.many;
+package com.lock.simple.many;
 
 public class TMain {
 	
