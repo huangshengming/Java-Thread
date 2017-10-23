@@ -21,4 +21,6 @@
 	com.lock.readAndWrite.readAndwrite
 ## 使用DCl双检查锁来实现多线程环境中的延迟加载单例设计模式
 	com.single.dcl
+## 使用静态内部类来实现多线程环境中的延迟加载单例设计模式
+	com.single.handler
 
