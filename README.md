@@ -23,4 +23,6 @@
 	com.single.dcl
 ## 使用静态内部类来实现多线程环境中的延迟加载单例设计模式
 	com.single.handler
+## 使用序列化和反序列化 来实现多线程环境中的延迟加载单例设计模式
+	com.single.serialize
 
