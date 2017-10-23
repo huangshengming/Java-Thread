@@ -11,3 +11,7 @@
 	com.piped.byteT
 ## 通过管道进行线程通信 字符<br />
 	com.piped.charT
+## 单一消费者 和 单一生产者（使用lock）<br />
+	com.lock.one
+## 多消费者 和 多生产者（使用lock）<br />	
+	com.lock.many
