@@ -1,0 +1,17 @@
+package com.single.staticDemo;
+
+public class StaticMain {
+
+	public static void main(String[] args) {
+		
+		MyThread myThread1 = new MyThread();
+		myThread1.start();
+		
+		MyThread myThread2 = new MyThread();
+		myThread2.start();
+		
+		MyThread myThread3 = new MyThread();
+		myThread3.start();
+	}
+
+}
