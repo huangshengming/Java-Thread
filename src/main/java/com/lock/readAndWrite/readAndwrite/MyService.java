@@ -12,24 +12,29 @@ public class MyService {
 	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 	
 	public void read() {
+		
 		try {
-			lock.readLock().lock();
-			System.out.println("获得写锁:" + Thread.currentThread().getName() + "," + System.currentTimeMillis());
+			try {
+				lock.readLock().lock();
+				System.out.println("获得写锁:" + Thread.currentThread().getName() + "," + System.currentTimeMillis());
+			} finally {
+				lock.readLock().unlock();
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			lock.readLock().unlock();
 		}
 	}
 	
 	public void write() {
 		try {
-			lock.writeLock().lock();
-			System.out.println("获得写锁:" + Thread.currentThread().getName() + "," + System.currentTimeMillis());
+			try {
+				lock.writeLock().lock();
+				System.out.println("获得写锁:" + Thread.currentThread().getName() + "," + System.currentTimeMillis());
+			}  finally {
+				lock.writeLock().unlock();
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			lock.writeLock().unlock();
 		}
 	}
 

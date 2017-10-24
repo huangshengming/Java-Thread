@@ -14,6 +14,7 @@ public class MyService {
 	private String v = new String();
 	
 	public void set() {
+		//不要试图 把 lock 放入到 try-catch 中，因为如果在获取锁时报错，会导致无故释放锁
 		lock.lock();
 		try {
 			while(hasValue) {
@@ -34,6 +35,7 @@ public class MyService {
 	}
 	
 	public void get() {
+		//不要试图 把 lock 放入到 try-catch 中，因为如果在获取锁时报错，会导致无故释放锁
 		lock.lock();
 		try {
 			while(!hasValue) {
