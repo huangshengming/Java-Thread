@@ -33,4 +33,6 @@
 	com.pool
 ## 使用fork／join框架
 	com.concurrent.forkjoin
+## 使用countdownlatch 
+	com.concurrent.countdownlatch
 
