@@ -2,6 +2,11 @@ package com.concurrent.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * CountDownLatch简单的说就是一个线程等待，直到他所等待的其他线程都执行完成并且调用countDown()方法发出通知后，当前线程才可以继续执行
+ * @author xingwuzhao
+ *
+ */
 public class TestCountDownLatch {
 	
 	public static final CountDownLatch LATCH = new CountDownLatch(10);
