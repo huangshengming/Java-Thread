@@ -37,4 +37,6 @@
 	com.concurrent.countdownlatch
 ## 使用CyclicBarrier 
 	com.concurrent.cyclicbarrier
+## 使用Semaphore 
+	com.concurrent.semaphore
 
